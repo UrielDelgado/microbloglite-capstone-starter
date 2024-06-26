@@ -14,6 +14,7 @@
 
     <!-- Global CSS (CSS rules you want applied to all pages) -->
     <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="./landing.css">
@@ -33,21 +34,41 @@
     </header>
 
     <main>
+        
+        <form class="card" id="login">
+    <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" minlength="3">
+    </div>
 
-        <form id="login">
-            <div>
-                <label for="username">Username</label>
-                <input type="text" id="username" minlength="3">
-            </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" minlength="6">
+    </div>
 
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" minlength="6">
-            </div>
+    <button class="Btn" id="loginButton" type="submit">
+        <div class="sign">
+            <svg viewBox="0 0 512 512">
+                <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path>
+            </svg>
+        </div>
+      
+        <div class="text">Login</div>
+    </button>
+    
+    <button onclick="window.location.href = 'registration.html';" class="coolbutton">
+        Need to Register?
+        <div id="clip">
+            <div id="leftTop" class="corner"></div>
+            <div id="rightBottom" class="corner"></div>
+            <div id="rightTop" class="corner"></div>
+            <div id="leftBottom" class="corner"></div>
+        </div>
+        <span id="rightArrow" class="arrow"></span>
+        <span id="leftArrow" class="arrow"></span>
+    </button>
+</form>
 
-            <button id="loginButton" type="submit">Login</button>
-            <button onclick="window.location.href = 'registration.html';">Need to Register?</button>
-        </form>
 
     </main>
 

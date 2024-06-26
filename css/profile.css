@@ -1,0 +1,14 @@
+body {
+    background: linear-gradient(to right, rgb(0, 225, 225), rgb(68, 92, 182));
+    
+}
+
+nav {
+    background: linear-gradient(to right, rgb(0, 225, 137), rgb(68, 92, 182))
+
+}
+
+.card {
+    margin:auto;
+    text-align: center;
+}
