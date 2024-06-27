@@ -26,6 +26,12 @@ const requestOptions = {
 
 fetch("http://microbloglite.us-east-2.elasticbeanstalk.com/api/posts", requestOptions)
   .then((response) => response.text())
-  .then((result) => console.log(result))
+  .then((result) => {console.log(result);
+    document.getElementById('createPost').value ="";
+  })
+
   .catch((error) => console.error(error));
 }
+
+
+
