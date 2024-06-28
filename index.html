@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,15 +28,53 @@
         if (isLoggedIn() === true) window.location.replace("Post.html");
     </script>
 </head>
+
 <body>
 
-    <header>
-        <h1 style="color: rgb(92, 28, 165);">Welcome to Hackermans</h1>
+    <header  class="p-5">
+        <h1 style="color: rgb(92, 28, 165); ">Welcome to Hackermans</h1>
     </header>
 
     <main>
+
+
+        <div class="wrapper">
+                <form id="login">
+                    <h1>Login</h1>
+                    <div class="input-box">
+                        <label for="username">Username</label>
+                        <input type="text" placeholder="Username" id="username" name="username" minlength="3" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Passward" id="password" name="password" minlength="6" required>
+                    </div>
+                    <div class="container">
+                        <div class="row d-flex justify-content-between">
+                            <button class="Btn" id="loginButton" type="submit">
+                                <div class="sign">
+                                    <svg viewBox="0 0 512 512">
+                                        <path
+                                            d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="text">Login</div>
+                            </button>
+                            <button onclick="window.location.href = 'registration.html';" class="coolbutton text-nowrap">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </form> 
+        </div>
         
-        <form  class="card w-25" id="login">
+
+
+
+
+
+        <!-- <form class="card w-25" id="login">
             <div>
                 <label for="username">Username</label>
                 <input type="text" id="username" minlength="3">
@@ -47,25 +86,28 @@
             </div>
             <button class="Btn" id="loginButton" type="submit">
                 <div class="sign">
-                  <svg viewBox="0 0 512 512">
-                    <path
-                      d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"
-                    ></path>
-                  </svg>
+                    <svg viewBox="0 0 512 512">
+                        <path
+                            d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z">
+                        </path>
+                    </svg>
                 </div>
-              
+
                 <div class="text">Login</div>
-              </button>
-              
+            </button>
+
             <button onclick="window.location.href = 'registration.html';" class="coolbutton text-nowrap">
                 Register
-                
+
             </button>
-        </form>
+        </form> -->
 
 
-        <div class="card des  w-25" >
-            <p>Welcome to Hackermans, where every connection tells a story. Join our vibrant community to share moments, ideas, and inspirations with friends old and new. Discover, connect, and create meaningful relationships in a space designed for sharing passions and forging new connections. Embrace your voice and explore what connects us all.</p>
+        <div class="card des  w-25">
+            <p>Welcome to Hackermans, where every connection tells a story. Join our vibrant community to share moments,
+                ideas, and inspirations with friends old and new. Discover, connect, and create meaningful relationships
+                in a space designed for sharing passions and forging new connections. Embrace your voice and explore
+                what connects us all.</p>
         </div>
 
     </main>
@@ -75,4 +117,5 @@
     <!-- Page-specific code -->
     <script src="scripts/landing.js"></script>
 </body>
+
 </html>
